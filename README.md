@@ -1,45 +1,75 @@
- # CREATE AN  ACCOUNT IN AWS SET UP A ROOT USER AND AN IAM USER 
+ # VIRTUAL MACHINE CREATION IN LINUX
+ 
+ ## AIM
+To install a Linux virtual machine (VM) using CentOS on VirtualBox or VMware Workstation.
 
-## AIM :
-To create an AWS account, set up a root user, and create an IAM user with specified permissions.
+## PROBLEM STATEMENT
+This experiment involves setting up a virtual machine with CentOS, a popular Linux distribution. This setup allows users to practice Linux commands, test applications, and develop software in a virtualized environment without affecting the host system.
 
-## PROBLEM STATEMENT :
-This experiment involves creating an AWS account, configuring security settings for the root user, and setting up an IAM user. IAM users allow for secure, managed access to AWS resources without exposing the main account's root credentials.
-
-## ALGORITHM :
-
+## ALGORITHM
  ### Step 1:
- Create an AWS Account </br>
+ Open VirtualBox or VMware Workstation</br>
+ 
  ### Step 2:
- Log In as Root User </br>
+ Go to File -> New to create a new virtual machine.</br>
+ 
  ### Step 3:
- Open IAM Management Console</br>
- ### Step 4:
- Add a New IAM User</br>
- ### Step 5:
- Configure IAM User Login</br>
- ### Step 6:
- Set Permissions for IAM User</br>
- ### Step 7:
- Review and Create IAM User</br>
+Enter a name for your CentOS VM.Choose Linux as the type and CentOS as the version (or select the closest option available if CentOS is not listed).</br>
 
-### REG NUMBER:212222100045
-### NAME: SANJAY RAGAVENDAR M K
+ ### Step 4:
+ Select the CentOS ISO image you downloaded.</br>
+ Set the base memory to 1024 MB (1 GB)</br>
+ Allocate 1 processor core </br>
+ Set the disk size to at least 20 GB</br>
+ Complete the configuration by clicking Finish to create the virtual machine</br>
+ 
+ ### Step 5:
+ Select the created VM, go to Details (or Settings), and navigate to the Network tab.</br>
+Configure Adapter 1 as NAT (for internet access through the host).</br>
+Configure Adapter 2 as Bridged Adapter (for direct access to the local network, if needed).</br>
+Click OK to save network settings.</br>
+
+### Step 6:
+Click Start to boot up the newly created virtual machine.</br>
+During installation, set a password for the root user.</br>
+After logging in to CentOS, open a terminal to start using the command line.</br>
+
+## COMMANDS
+
+#### Switch to User:
+```
+su username
+```
+#### View IP Address:
+```
+ip a
+```
+#### Create a Directory:
+```
+mkdir <directory_name>
+```
+#### Change to the New Directory:
+```
+cd <directory_name>
+```
+#### Edit the Hostname File:
+```
+vi /etc/hostname
+```
+#### View the Content of the Hostname File:
+```
+cat /etc/hostname
+```
+
+### REG NUMBER: 212222100045
+### NAME: SANJAY RAGAVENDAR M K 
 
 ## OUTPUT
-
-### ROOT USER:
-![image](https://github.com/user-attachments/assets/c12802cb-22d1-4fdf-89a9-61bdc09d8dc5)
-
-![image](https://github.com/user-attachments/assets/be14c0fc-637a-4b28-82a3-b128916487d1)
-
- ### IAM USER:
-![image](https://github.com/user-attachments/assets/f3fca9df-efc2-4d5b-889b-e01c605fa6e1)
-
-![image](https://github.com/user-attachments/assets/a9f6b479-503e-41fe-adf5-80de9761f855)
+![image](https://github.com/user-attachments/assets/31760086-305c-40af-9894-c12f799ae6e2)
 
 ## RESULT
-The AWS account was successfully created, with set up for the root user . Additionally, an IAM user was created with specified permissions, allowing for secure, controlled access to AWS resources without the use of the root account. 
+ Successfully installed CentOS on a virtual machine using VirtualBox or VMware, providing a fully functional CentOS environment for testing and development.
 
   
+
 
