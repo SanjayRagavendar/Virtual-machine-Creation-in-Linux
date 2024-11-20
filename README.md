@@ -65,7 +65,7 @@ cat /etc/hostname
 ### NAME: SANJAY RAGAVENDAR M K 
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/31760086-305c-40af-9894-c12f799ae6e2)
+![78465ace-4cfc-4cec-95cd-530b15d968a2](https://github.com/user-attachments/assets/f3ba8c64-01a2-41b8-b369-df05c2894b0e)
 
 ## RESULT
  Successfully installed CentOS on a virtual machine using VirtualBox or VMware, providing a fully functional CentOS environment for testing and development.
